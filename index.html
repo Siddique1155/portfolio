@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Muhammad Siddique | Portfolio</title>
+<title>Muhammad Siddique | Professional Portfolio</title>
 
 <!-- ================= SEO ================= -->
 <meta name="description" content="Muhammad Siddique Portfolio - Frontend & WordPress Developer">
-<meta name="keywords" content="Portfolio, Web Developer, WordPress, HTML, CSS, JavaScript">
+<meta name="keywords" content="Portfolio, Web Developer, WordPress, HTML, CSS, JavaScript, Freelancer">
 <meta name="author" content="Muhammad Siddique">
 <meta name="robots" content="index, follow">
 
@@ -27,7 +27,7 @@ color:white;
 transition:0.3s;
 }
 
-/* ===== Dark Mode ===== */
+/* ===== DARK MODE ===== */
 .dark{
 background:#111;
 color:white;
@@ -77,6 +77,29 @@ text-align:center;
 
 .hero h1{
 font-size:40px;
+}
+
+/* Typing Animation */
+.typing{
+font-size:22px;
+color:yellow;
+font-weight:bold;
+min-height:30px;
+}
+
+/* ===== BUTTON ===== */
+button{
+background:#4e73df;
+color:white;
+padding:10px 18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#2e59d9;
 }
 
 /* ===== PROJECTS ===== */
@@ -137,6 +160,7 @@ display:block;
 
 <!-- ================= NAVIGATION ================= -->
 <nav>
+
 <a href="#">Home</a>
 <a href="#projects">Projects</a>
 <a href="about.html">About</a>
@@ -148,9 +172,15 @@ display:block;
 
 <!-- ================= HERO ================= -->
 <div class="hero">
+
 <h1>Hi, I'm Muhammad Siddique</h1>
-<p>Frontend Developer | WordPress Developer | Freelancer</p>
+
+<div class="typing" id="typingText"></div>
+
+<br>
+
 <button>Download CV</button>
+
 </div>
 
 <!-- ================= PROJECTS ================= -->
@@ -158,15 +188,22 @@ display:block;
 
 <!-- Portfolio Project -->
 <div class="card">
-<img src="https://via.placeholder.com/300x180">
+
+<img src="images/project1.jpg" alt="Portfolio Image">
+
 <h2>Portfolio Website</h2>
+
 <p>Built with HTML, CSS & JavaScript.</p>
+
 </div>
 
 <!-- WordPress Project -->
 <div class="card">
-<img src="https://via.placeholder.com/300x180">
+
+<img src="images/project2.jpg" alt="WordPress Project">
+
 <h2>SIMS Kohat</h2>
+
 <p>Official WordPress Website</p>
 
 <a href="https://simskohat.com" target="_blank">
@@ -179,15 +216,38 @@ display:block;
 
 <!-- ================= FOOTER ================= -->
 <footer>
+
 <p>© 2026 Muhammad Siddique | All Rights Reserved</p>
+
 </footer>
 
 <!-- ================= SCRIPT ================= -->
 <script>
 
+/* Dark Mode */
 function toggleMode(){
 document.body.classList.toggle("dark");
 }
+
+/* Typing Animation */
+const text = "Frontend Developer | WordPress Developer | Freelancer";
+let index = 0;
+
+function typeEffect(){
+
+document.getElementById("typingText").innerHTML =
+text.substring(0,index);
+
+index++;
+
+if(index > text.length){
+index = 0;
+}
+
+setTimeout(typeEffect,100);
+}
+
+typeEffect();
 
 </script>
 
