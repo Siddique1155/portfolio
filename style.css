@@ -1,0 +1,56 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    color: white;
+    margin: 0;
+}
+
+nav{
+    background: white;
+    padding: 15px;
+}
+
+nav a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #4e73df;
+}
+
+.container{
+    margin: 80px 20px;
+}
+
+.card{
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 15px;
+}
+
+button{
+    background: #4e73df;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #2e59d9;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    
+}
