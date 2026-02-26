@@ -1,31 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About - Muhammad Siddique</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Muhammad Siddique</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(to right,#4e73df,#1cc88a);
+color:white;
+}
+
+/* ===== About Section ===== */
+.about-container{
+max-width:800px;
+margin:60px auto;
+background:white;
+color:black;
+padding:50px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.about-container img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:0 auto 20px auto;
+border:4px solid #4e73df;
+}
+
+/* Text */
+.about-container h2{
+text-align:center;
+}
+
+.about-container p{
+text-align:center;
+line-height:1.6;
+}
+
+/* Skills */
+.skills{
+margin-top:20px;
+}
+
+.skill-bar{
+background:#ddd;
+border-radius:20px;
+margin:10px 0;
+overflow:hidden;
+}
+
+.skill-progress{
+height:12px;
+background:#4e73df;
+}
+
+/* Mobile */
+@media(max-width:600px){
+.about-container{
+margin:30px 15px;
+padding:25px;
+}
+}
+
+</style>
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<div class="about-container">
 
-<div class="container">
-    <h1>About Me</h1>
-    <p>I am a Software Engineering student passionate about Web Development and AI.</p>
-    
-    <h2>Skills</h2>
-    <p>HTML</p>
-    <p>CSS</p>
-    <p>JavaScript (Basic)</p>
+<img src="https://via.placeholder.com/150">
+
+<h2>About Me</h2>
+
+<p>
+I am Muhammad Siddique — Frontend Developer & WordPress Developer.
+I build modern, responsive and professional websites for businesses and clients.
+</p>
+
+<div class="skills">
+
+<h3>My Skills</h3>
+
+<div class="skill-bar">
+<div class="skill-progress" style="width:90%"></div>
+</div>
+<p>HTML 90%</p>
+
+<div class="skill-bar">
+<div class="skill-progress" style="width:85%"></div>
+</div>
+<p>CSS 85%</p>
+
+<div class="skill-bar">
+<div class="skill-progress" style="width:70%"></div>
+</div>
+<p>JavaScript 70%</p>
+
 </div>
 
-<footer>
-    <p>© 2026 Muhammad Siddique | All Rights Reserved</p>
-</footer>
+</div>
 
 </body>
 </html>
