@@ -66,12 +66,12 @@ body{
 
 /* Profile Image */
 .profile-img{
+  display:block !important;
   width:180px;
   height:180px;
   border-radius:50%;
   object-fit:cover;
   border:4px solid #4e73df;
-  display:block;
   margin:0 auto 20px auto;
 }
 
@@ -138,8 +138,12 @@ footer{
   }
   .menu-icon{
     display:block;
+    color:black;
   }
-  .profile-img{ width:140px; height:140px; }
+  .profile-img{
+    width:140px;
+    height:140px;
+  }
   .section h2{ font-size:24px; }
   .section p{ font-size:16px; }
   div[style*="max-width:500px"]{ width:90%; margin:auto; }
@@ -166,7 +170,7 @@ footer{
 
 <!-- =================== ABOUT SECTION =================== -->
 <section class="section">
-  <img src="assets/images/profile.jpg" alt="Profile" class="profile-img">
+  <img src="images/profile.jpg" alt="Profile" class="profile-img">
   <h2>About Me</h2>
   <p>I am Muhammad Siddique — Frontend Developer & WordPress Developer.
   I build modern, responsive and high-performance websites for clients and businesses. I have real project experience including live WordPress websites.</p>
@@ -186,7 +190,6 @@ footer{
 
     <p>WordPress <span style="float:right;">80%</span></p>
     <div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
-
   </div>
 </section>
 
