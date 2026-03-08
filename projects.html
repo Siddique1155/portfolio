@@ -12,30 +12,46 @@
 <link rel="stylesheet" href="css/style.css">
 
 <style>
+/* =================== NAVBAR =================== */
+nav{
+  background:white;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:10;
+}
+
+.logo{ font-weight:bold; font-size:22px; }
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links li a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+.nav-links li a:hover{ color:#4e73df; }
+
+.menu-icon{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* =================== PAGE CONTAINER =================== */
 body{
   font-family: Arial, sans-serif;
   margin:0;
   background: linear-gradient(to right,#4e73df,#1cc88a);
   color:white;
-}
-
-/* Navbar */
-nav{
-  background:white;
-  padding:15px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-}
-nav a{
-  margin:5px 15px;
-  text-decoration:none;
-  color:black;
-  font-weight:bold;
-}
-nav a:hover{
-  color:#4e73df;
 }
 
 /* Container */
@@ -114,29 +130,55 @@ footer{
 }
 .footer-social a:hover{ color: #4e73df; }
 
-/* Responsive */
+/* =================== RESPONSIVE =================== */
 @media(max-width:768px){
   .container{
     flex-direction:column;
     align-items:center;
   }
+  .nav-links{
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+  }
+  .nav-links li{
+    padding:15px 0;
+  }
+  .nav-links.active{
+    display:flex;
+  }
+  .menu-icon{
+    display:block;
+  }
+  .card{ width:90%; margin:auto; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- =================== NAVBAR =================== -->
 <nav>
-<div><strong>Siddique</strong></div>
-<div>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</div>
+  <div class="logo"><strong>Siddique</strong></div>
+  
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
 </nav>
 
-<!-- PROJECTS SECTION -->
+<!-- =================== PROJECTS SECTION =================== -->
 <div class="container">
 
 <!-- Project 1 -->
@@ -163,29 +205,36 @@ footer{
   </a>
 </div>
 
-<!-- Add more projects by copying a card -->
+<!-- Add more project cards as needed -->
 
 </div>
 
-<!-- FOOTER -->
+<!-- =================== FOOTER =================== -->
 <footer>
-<div class="footer-container">
-<p>© 2026 Muhammad Siddique | Available for Remote & Dubai Opportunities</p>
+  <div class="footer-container">
+    <p>© 2026 Muhammad Siddique | Available for Remote & Dubai Opportunities</p>
 
-<div class="footer-links">
-<a href="index.html">Home</a> |
-<a href="about.html">About</a> |
-<a href="projects.html">Projects</a> |
-<a href="contact.html">Contact</a>
-</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="contact.html">Contact</a>
+    </div>
 
-<div class="footer-social">
-<a href="https://github.com/Siddique1155" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-<a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-</div>
-</div>
+    <div class="footer-social">
+      <a href="https://github.com/Siddique1155" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
 </footer>
+
+<!-- =================== JAVASCRIPT =================== -->
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
