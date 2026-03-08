@@ -8,11 +8,42 @@
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
-
 <style>
-/* Hero Section */
+/* =================== NAVBAR =================== */
+nav{
+  background:white;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:10;
+}
+
+.logo{ font-weight:bold; font-size:22px; }
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links li a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+
+.nav-links li a:hover{ color:#4e73df; }
+
+.menu-icon{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* =================== HERO =================== */
 .hero{
   text-align:center;
   padding:100px 20px;
@@ -34,12 +65,12 @@
 }
 .hero .btn:hover{ background:#f1f1f1; }
 
-/* Sections */
+/* =================== SECTIONS =================== */
 .section{ max-width:1000px; margin:50px auto; padding:0 20px; text-align:center; }
 .section h2{ font-size:28px; margin-bottom:20px; }
 .section p{ font-size:18px; }
 
-/* Grid & Cards */
+/* =================== GRID & CARDS =================== */
 .grid{ display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
 .card{
   background:#fff;
@@ -64,7 +95,7 @@
 }
 .card .btn:hover{ background:#2e59d9; }
 
-/* Footer */
+/* =================== FOOTER =================== */
 footer{
   background: #1a1a1a;
   color: #fff;
@@ -104,38 +135,65 @@ footer{
   color: #4e73df;
 }
 
-/* Navbar */
-nav{
-  background:white;
-  padding:15px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
+/* =================== RESPONSIVE NAVBAR & HERO =================== */
+@media (max-width:768px){
+  .nav-links{
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    text-align:center;
+    display:none;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+  }
+  
+  .nav-links li{
+    padding:15px 0;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  /* Hero scaling for mobile */
+  .hero h1{ font-size:28px; }
+  .hero p{ font-size:16px; }
+  .hero .btn{ padding:8px 15px; margin:5px; font-size:14px; }
+
+  /* Section text scaling */
+  .section h2{ font-size:24px; }
+  .section p{ font-size:16px; }
+
+  /* Cards responsive */
+  .card{ width:90%; margin:auto; }
 }
-nav a{
-  margin:0 15px;
-  text-decoration:none;
-  color:black;
-  font-weight:bold;
-}
-nav a:hover{ color:#4e73df; }
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- =================== NAVBAR =================== -->
 <nav>
-  <div><strong>Siddique</strong></div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+  <div class="logo"><strong>Siddique</strong></div>
+  
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- =================== HERO =================== -->
 <section class="hero">
   <h1>Muhammad Siddique</h1>
   <p>Frontend Developer | WordPress Developer</p>
@@ -145,14 +203,14 @@ nav a:hover{ color:#4e73df; }
   </div>
 </section>
 
-<!-- ABOUT PREVIEW -->
+<!-- =================== ABOUT PREVIEW =================== -->
 <section class="section">
   <h2>About Preview</h2>
   <p>I build modern and responsive websites using HTML, CSS, JavaScript and WordPress.</p>
   <a href="about.html" class="btn" style="margin-top:20px;">Read More</a>
 </section>
 
-<!-- FEATURED PROJECTS -->
+<!-- =================== FEATURED PROJECTS =================== -->
 <section class="section">
   <h2>Featured Projects</h2>
   <div class="grid">
@@ -169,7 +227,7 @@ nav a:hover{ color:#4e73df; }
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- =================== FOOTER =================== -->
 <footer>
   <div class="footer-container">
     <p>© 2026 Muhammad Siddique | Available for Remote & Dubai Opportunities</p>
@@ -184,10 +242,17 @@ nav a:hover{ color:#4e73df; }
     <div class="footer-social">
       <a href="https://github.com/Siddique1155" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/muhammad-siddique-168899220/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://mail.google.com/mail/u/0/#inbox" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 </footer>
+
+<!-- =================== JAVASCRIPT =================== -->
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
