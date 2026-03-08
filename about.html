@@ -4,110 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Muhammad Siddique</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(to right,#4e73df,#1cc88a);
-color:white;
-}
-
-/* ===== About Section ===== */
-.about-container{
-max-width:800px;
-margin:60px auto;
-background:white;
-color:black;
-padding:50px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* Image */
-.about-container img{
-width:150px;
-height:150px;
-border-radius:50%;
-object-fit:cover;
-display:block;
-margin:0 auto 20px auto;
-border:4px solid #4e73df;
-}
-
-/* Text */
-.about-container h2{
-text-align:center;
-}
-
-.about-container p{
-text-align:center;
-line-height:1.6;
-}
-
-/* Skills */
-.skills{
-margin-top:20px;
-}
-
-.skill-bar{
-background:#ddd;
-border-radius:20px;
-margin:10px 0;
-overflow:hidden;
-}
-
-.skill-progress{
-height:12px;
-background:#4e73df;
-}
-
-/* Mobile */
-@media(max-width:600px){
-.about-container{
-margin:30px 15px;
-padding:25px;
-}
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div class="about-container">
+<nav>
+<div><strong>Siddique</strong></div>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
 
-<img src="https://via.placeholder.com/150">
-
+<section class="section">
+<img src="assets/images/profile.jpg" style="width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #4e73df;display:block;margin:0 auto 20px auto;">
 <h2>About Me</h2>
+<p>I am Muhammad Siddique — Frontend Developer & WordPress Developer.
+I build modern, responsive and high-performance websites for clients and businesses. I have real project experience including live WordPress websites.</p>
 
-<p>
-I am Muhammad Siddique — Frontend Developer & WordPress Developer.
-I build modern, responsive and professional websites for businesses and clients.
-</p>
-
-<div class="skills">
-
-<h3>My Skills</h3>
-
-<div class="skill-bar">
-<div class="skill-progress" style="width:90%"></div>
-</div>
-<p>HTML 90%</p>
-
-<div class="skill-bar">
-<div class="skill-progress" style="width:85%"></div>
-</div>
-<p>CSS 85%</p>
-
-<div class="skill-bar">
-<div class="skill-progress" style="width:70%"></div>
-</div>
-<p>JavaScript 70%</p>
-
+<div style="max-width:500px; margin:40px auto; text-align:left;">
+<h3 style="text-align:center;">My Skills</h3>
+<p>HTML <span style="float:right;">90%</span></p>
+<div style="background:#ddd; border-radius:20px; overflow:hidden; margin-bottom:10px;">
+<div style="width:90%; height:12px; background:#4e73df;"></div>
 </div>
 
+<p>CSS <span style="float:right;">85%</span></p>
+<div style="background:#ddd; border-radius:20px; overflow:hidden; margin-bottom:10px;">
+<div style="width:85%; height:12px; background:#4e73df;"></div>
 </div>
+
+<p>JavaScript <span style="float:right;">70%</span></p>
+<div style="background:#ddd; border-radius:20px; overflow:hidden; margin-bottom:10px;">
+<div style="width:70%; height:12px; background:#4e73df;"></div>
+</div>
+
+<p>WordPress <span style="float:right;">80%</span></p>
+<div style="background:#ddd; border-radius:20px; overflow:hidden; margin-bottom:10px;">
+<div style="width:80%; height:12px; background:#4e73df;"></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Muhammad Siddique | Available for Remote & Dubai Opportunities</p>
+<div class="footer-social">
+<a href="https://github.com/Siddique1155" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+</div>
+</footer>
 
 </body>
 </html>
