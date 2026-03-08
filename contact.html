@@ -4,87 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Muhammad Siddique</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:linear-gradient(to right,#4e73df,#1cc88a);
-color:white;
-}
-
-/* ===== Container ===== */
-.contact-container{
-max-width:500px;
-margin:60px auto;
-background:white;
-color:black;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* ===== Inputs ===== */
-input, textarea{
-width:100%;
-padding:12px;
-margin:8px 0 15px 0;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:14px;
-}
-
-/* ===== Button ===== */
-button{
-background:#4e73df;
-color:white;
-padding:12px;
-width:100%;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-transition:0.3s;
-}
-
-button:hover{
-background:#2e59d9;
-}
-
-/* ===== Mobile ===== */
-@media(max-width:600px){
-.contact-container{
-margin:30px 15px;
-padding:25px;
-}
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div class="contact-container">
+<nav>
+<div><strong>Siddique</strong></div>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
 
-<h2>📩 Contact Me</h2>
+<section class="section">
+<h2>Contact Me</h2>
 <p>Send me a message — I will reply as soon as possible.</p>
 
-<form action="https://formspree.io/f/xreajqzd" method="POST">
-
-<label>Name</label>
-<input type="text" name="name" required>
-
-<label>Email</label>
-<input type="email" name="email" required>
-
-<label>Message</label>
-<textarea name="message" rows="5" required></textarea>
-
-<button type="submit">Send Message 🚀</button>
-
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
 </form>
+</section>
 
+<footer>
+<p>© 2026 Muhammad Siddique | Available for Remote & Dubai Opportunities</p>
+<div class="footer-social">
+<a href="https://github.com/Siddique1155" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
 </div>
+</footer>
 
 </body>
 </html>
