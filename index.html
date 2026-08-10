@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Muhammad Siddique — AI Automation Engineer & Digital Builder</title>
+<meta name="description" content="Muhammad Siddique builds AI automation systems, intelligent workflows, AI agents, websites and digital solutions for modern businesses." />
+<meta name="keywords" content="AI automation engineer, n8n developer, WhatsApp automation, AI agents, WordPress developer, automation builder" />
+<meta name="author" content="Muhammad Siddique" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://muhammadsiddique.dev/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Muhammad Siddique" />
+<meta property="og:title" content="Muhammad Siddique — AI Automation Engineer & Digital Builder" />
+<meta property="og:description" content="Building intelligent systems that automate work, connect platforms, and help businesses grow." />
+<meta property="og:url" content="https://muhammadsiddique.dev/" />
+<meta property="og:image" content="/assets/images/profile.jpg" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Muhammad Siddique — AI Automation Engineer & Digital Builder" />
+<meta name="twitter:description" content="Building intelligent systems that automate work, connect platforms, and help businesses grow." />
+<meta name="twitter:image" content="/assets/images/profile.jpg" />
+
+<meta name="theme-color" content="#05070C" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Siddique",
+  "jobTitle": "AI Automation Engineer & Digital Builder",
+  "url": "https://muhammadsiddique.dev/",
+  "email": "m.siddiq1137@gmail.com",
+  "alumniOf": "Kohat University of Science & Technology (KUST)",
+  "sameAs": [
+    "https://www.linkedin.com/in/muhammad-siddique-168899220/",
+    "https://github.com/Siddique1155"
+  ],
+  "knowsAbout": ["AI Automation", "n8n", "WhatsApp Automation", "AI Agents", "WordPress Development", "Frontend Development"]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ AMBIENT BACKGROUND ============ -->
+<div class="bg-fx" id="bgFx" aria-hidden="true">
+  <span class="bg-aurora bg-aurora-1"></span>
+  <span class="bg-aurora bg-aurora-2"></span>
+  <span class="bg-noise"></span>
+</div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"><span></span></div>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <svg class="loader-mark" viewBox="0 0 48 48" fill="none">
+      <circle cx="24" cy="24" r="20" stroke="url(#loaderGrad)" stroke-width="2" stroke-dasharray="6 6"/>
+      <circle cx="24" cy="24" r="4" fill="#4E7CFF"/>
+      <defs>
+        <linearGradient id="loaderGrad" x1="0" y1="0" x2="48" y2="48">
+          <stop offset="0" stop-color="#4E7CFF"/>
+          <stop offset="1" stop-color="#FFB454"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <p class="loader-label">M.SIDDIQUE<span>.SYS</span></p>
+    <div class="loader-bar"><span id="loaderProgress"></span></div>
+  </div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" data-cursor="link">
+      <span class="nav-logo-mark" aria-hidden="true"></span>
+      Siddique<span>.sys</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" data-cursor="link"><span>About</span></a>
+      <a href="#skills" data-cursor="link"><span>Skills</span></a>
+      <a href="#work" data-cursor="link"><span>Work</span></a>
+      <a href="#automation" data-cursor="link"><span>Automation</span></a>
+      <a href="#experience" data-cursor="link"><span>Experience</span></a>
+      <a href="#contact" data-cursor="link"><span>Contact</span></a>
+    </nav>
+    <a href="#contact" class="btn btn-ghost nav-cta" data-cursor="link">Let's Work Together</a>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#work">Work</a>
+    <a href="#automation">Automation</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-fog" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="status-chip reveal-line"><span><i class="status-dot"></i>Available for Remote Projects</span></p>
+        <h1 class="hero-title">
+          <span class="reveal-line"><span>Building Intelligent</span></span>
+          <span class="reveal-line"><span>Systems That Work</span></span>
+          <span class="reveal-line"><span>For <em>You</em>.</span></span>
+        </h1>
+        <p class="hero-sub reveal-line"><span>AI Automation Engineer & Digital Builder creating intelligent workflows, AI agents,
+        websites and business systems that reduce manual work and accelerate growth.</span></p>
+        <div class="hero-cta reveal-line">
+          <span>
+            <a href="#work" class="btn btn-primary" data-cursor="link"><span>View My Work</span></a>
+            <a href="#contact" class="btn btn-outline" data-cursor="link"><span>Let's Build Something</span></a>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal-up">
+        <div class="portrait-frame">
+          <div class="portrait-scan" aria-hidden="true"></div>
+          <img src="assets/images/profile.jpg" alt="Portrait of Muhammad Siddique" width="1085" height="1450" />
+          <svg class="portrait-ring" viewBox="0 0 400 400" aria-hidden="true">
+            <circle cx="200" cy="200" r="192" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="2 10"/>
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4E7CFF"/>
+                <stop offset="1" stop-color="#FFB454"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="portrait-node portrait-node-1">n8n</span>
+        <span class="portrait-node portrait-node-2">AI Agent</span>
+        <span class="portrait-node portrait-node-3">WordPress</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" data-cursor="link" aria-label="Scroll to next section">
+      <span class="scroll-cue-line"></span>
+      Scroll
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Who I Am</p>
+        <h2>Web development, AI and automation — as one discipline</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal-up">
+          <p class="lead">Muhammad Siddique is a developer and automation builder who combines web development, AI and
+          business systems into one practice. Instead of treating a website as the finish line, he treats it as one
+          part of a larger system — the part that connects to the workflows, agents and integrations that actually
+          remove manual work from a business.</p>
+          <p class="lead">That means a project doesn't stop at a homepage. It extends into WhatsApp replies, lead
+          routing, CRM updates and content pipelines — wherever the repetitive work actually lives.</p>
+        </div>
+
+        <div class="about-diagram reveal-up" aria-label="Problem to Result process diagram">
+          <div class="diagram-row">
+            <div class="diagram-node"><span>Problem</span><small>Manual, repetitive work</small></div>
+            <span class="diagram-arrow" data-icon="arrow"></span>
+            <div class="diagram-node"><span>Automation</span><small>n8n workflows</small></div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-node"><span>AI</span><small>Agents & intent logic</small></div>
+            <span class="diagram-arrow" data-icon="arrow"></span>
+            <div class="diagram-node"><span>Integration</span><small>APIs, CRM, Sheets</small></div>
+          </div>
+          <div class="diagram-row diagram-row-result">
+            <span class="diagram-arrow diagram-arrow-down" data-icon="arrow"></span>
+          </div>
+          <div class="diagram-node diagram-node-result"><span>Result</span><small>A system that runs without him in the loop</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Skill Matrix</p>
+        <h2>What I actually build with</h2>
+      </div>
+
+      <div class="skills-groups" id="skillsGroups"><!-- injected by animations.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED AUTOMATION ECOSYSTEM ============ -->
+  <section class="ecosystem" id="automation">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Not Just Websites</p>
+        <h2>I don't just build websites. I build systems.</h2>
+        <p class="section-sub">Hover any node to see how it connects back to a central AI agent.</p>
+      </div>
+
+      <div class="ecosystem-wrap">
+        <div class="ecosystem-diagram" id="ecosystemDiagram"><!-- injected by animations.js --></div>
+        <div class="ecosystem-detail" id="ecosystemDetail">
+          <p class="eyebrow" id="ecosystemDetailLabel">AI Agent Core</p>
+          <p id="ecosystemDetailText">Every channel below reports into one AI-agent core — same logic, same memory, consistent replies no matter where a customer reaches out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PROJECTS ============ -->
+  <section class="work" id="work">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects, not placeholders</h2>
+        <p class="section-sub">Every project below is real. Live links go to the actual site — no invented case studies or results.</p>
+      </div>
+
+      <div class="work-grid" id="workGrid"><!-- injected by animations.js --></div>
+    </div>
+  </section>
+
+  <div class="case-modal" id="caseModal" aria-hidden="true">
+    <div class="case-modal-backdrop" data-close-modal></div>
+    <div class="case-modal-panel" role="dialog" aria-modal="true" aria-labelledby="caseModalTitle">
+      <button class="case-modal-close" data-close-modal aria-label="Close case study">✕</button>
+      <div class="case-modal-body" id="caseModalBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ 3D SYSTEM ARCHITECTURE ============ -->
+  <section class="architecture" id="architecture">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">System Architecture</p>
+        <h2>One AI agent. Every channel connected.</h2>
+      </div>
+      <div class="architecture-stage">
+        <canvas id="architectureCanvas" class="architecture-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">How I Work</p>
+        <h2>From problem to a system that runs itself</h2>
+      </div>
+      <ol class="process-line" id="processLine"></ol>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2>What I can build for you</h2>
+      </div>
+      <div class="services-grid" id="servicesGrid"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <div class="section-inner section-inner-narrow">
+      <div class="section-head">
+        <p class="eyebrow">Background</p>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline" id="timeline"><!-- injected --></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="section-head section-head-center">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Have a repetitive process? Let's automate it.</h2>
+        <p class="section-sub">Tell me what takes your team hours every day. I'll help turn it into an intelligent workflow.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="cf-message">What takes your team hours every day?</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="cfSubmit" data-cursor="link"><span>Start a Project</span></button>
+          <p class="form-status" id="cfStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side">
+          <a class="contact-chip" href="mailto:m.siddiq1137@gmail.com" data-cursor="link">
+            <span class="chip-icon" data-icon="email"></span>
+            <div><small>Email</small><strong>m.siddiq1137@gmail.com</strong></div>
+          </a>
+          <a class="contact-chip" href="https://wa.me/923295145843" target="_blank" rel="noopener" data-cursor="link">
+            <span class="chip-icon" data-icon="whatsapp"></span>
+            <div><small>WhatsApp</small><strong>+92 329 5145843</strong></div>
+          </a>
+          <a class="contact-chip" href="https://www.linkedin.com/in/muhammad-siddique-168899220/" target="_blank" rel="noopener" data-cursor="link">
+            <span class="chip-icon" data-icon="linkedin"></span>
+            <div><small>LinkedIn</small><strong>Muhammad Siddique</strong></div>
+          </a>
+          <a class="contact-chip" href="https://github.com/Siddique1155" target="_blank" rel="noopener" data-cursor="link">
+            <span class="chip-icon" data-icon="github"></span>
+            <div><small>GitHub</small><strong>Siddique1155</strong></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-particles" id="footerParticles" aria-hidden="true"></div>
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo" data-cursor="link">Siddique<span>.sys</span></a>
+      <p>AI Automation Engineer • Digital Builder</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/muhammad-siddique-168899220/" target="_blank" rel="noopener" aria-label="LinkedIn" data-cursor="link"><span data-icon="linkedin"></span></a>
+        <a href="https://github.com/Siddique1155" target="_blank" rel="noopener" aria-label="GitHub" data-cursor="link"><span data-icon="github"></span></a>
+        <a href="mailto:m.siddiq1137@gmail.com" aria-label="Email" data-cursor="link"><span data-icon="email"></span></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>System</h4>
+      <p class="system-status"><i class="status-dot"></i>SYSTEM ONLINE</p>
+      <p class="footer-note">Static site, no tracking scripts.</p>
+    </div>
+  </div>
+  <div class="footer-bottom section-inner">
+    <p>© <span id="year"></span> Muhammad Siddique. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ VENDOR (CDN) ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+<!-- ============ APP ============ -->
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/three-hero.js"></script>
+<script src="js/three-architecture.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>

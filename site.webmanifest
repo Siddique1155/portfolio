@@ -1,0 +1,12 @@
+{
+  "name": "Muhammad Siddique — AI Automation Engineer",
+  "short_name": "Siddique.sys",
+  "description": "AI automation systems, intelligent workflows, AI agents and websites.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070C",
+  "theme_color": "#05070C",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
